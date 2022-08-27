@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+body{
+background-color: rgb(85,0,236);
+background-color: linear-gradient(90deg, rgba(133, 72, 238, 0.403) 0%, rgba(0,152,255,0.6626983557094712) 44%, rgba(255,118,0,0.7131185237766982) 100%);
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  position: relative;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: 600;
+    color:#fff;
+    letter-spacing: 5px;
+    filter: drop-shadow(0mm 0mm 5mm rgb(255,255,255));
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.poke-container{
+  height: 100vh;
+  width: 100vw;  
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+  position: relative;
+
+  
+}
+
+
+
+.poke-box{
+display: flex;
+position: relative;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-family: 'Lato', sans-serif;
+background-color: #fff;
+width: 300px;
+ height: 500px;
+ z-index: 1;
+ border-radius: 20px;
+ margin-bottom: 50px;
+ filter: drop-shadow(0mm 0mm 5mm rgb(255, 255, 255));
+
+
+}
+
+.poke-box::before{
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color: rgba(254, 2, 2, 0.364);
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+ filter: drop-shadow(0mm 0mm 5mm rgb(255, 0, 0));
+
+
+}
+
+
+
+
+.poke-box img{
+    width: 75%;
+    z-index: 1;
+    transform: scale(1);
+}
+
+
+.poke-text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+}
+
+.poke-id{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.poke-name{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.poke-type{
+    font-size: 17px;
+}
+
+.button-container{
+    width: 210px;
+   margin-top: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.random{
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+
+}
+
+
+.random.active{
+bottom: 20px;
+
+
+}
