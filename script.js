@@ -18,9 +18,10 @@ random.addEventListener('click', async function randomPokemon() {
 //todo API
 
 async function getPokemon(id) {
-    let url = `https://pokeapi.co/api/v2/pokemon/${id}`
+    let url = `https://pokeapi.co/api/v2/pokemon-form/${id}`
     let res = await fetch(url)
     let data = await res.json()
+    console.log(data)
 
     createPokemonBox(data)
 
@@ -61,5 +62,5 @@ async function createPokemonBox(pokemon) {
 }
 
 
-randomPokemon()
+
 
