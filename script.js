@@ -4,6 +4,8 @@ const body = document.querySelector('body')
 const pokeCount = 905
 
 
+console.log("alperen was here ")
+
 //todo RANDOM POKE BUTTON
 
 random.addEventListener('click', async function randomPokemon() {
