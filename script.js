@@ -5,6 +5,7 @@ const pokeCount = 905
 
 
 console.log("alperen was here ")
+alert(2)
 
 //todo RANDOM POKE BUTTON
 
